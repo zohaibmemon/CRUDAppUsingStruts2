@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+    
+    <struts>
+    			<package name="default"   extends="struts-default">
+    			
+    			<!-- 	<action name="getlogins"   class="com.geaks.zohaib.LoginAction" method="userLogin">
+    				
+    					<result name="welcomePage">/WelcomeUser.jsp</result>
+
+    				<result name="errorPage">/errorPage.jsp</result> 
+    				</action>
+    				 -->
+    				 <action name="report" class="com.geaks.zohaib.StrutsAction" method="myReport">
+						<result name="REPORT">/report1.jsp</result>
+					</action>
+    				<action name="add"   class="com.geaks.zohaib.StrutsAction" method="addUser">
+    				
+    					<result name="REPORT1">report1.jsp</result>
+    			<!-- 	<result name="login">/error.jsp</result> -->
+    				<result name="input">/errorPage.jsp</result> 
+    				</action>
+    				
+    				<action name="delete"   class="com.geaks.zohaib.StrutsAction" method="deleteUser">
+    				
+    					<result name="REPORT4">/report1.jsp</result>
+    			<!-- 	<result name="login">/error.jsp</result>-->
+    				<result name="input">/errorPage.jsp</result> 
+    				</action>
+    				<action name="edit"   class="com.geaks.zohaib.StrutsAction" method="EditUser">
+    				
+    					<result name="REPORT2">/edit.jsp</result>
+    			<!-- 	<result name="login">/error.jsp</result> -->
+    				<result name="input">/errorPage.jsp</result> 
+    				</action>
+    				<action name="update"   class="com.geaks.zohaib.StrutsAction" method="updateUser">
+    				
+    					<result name="REPORT3">/report1.jsp</result>
+    			<!-- 	<result name="login">/error.jsp</result> -->
+    				<result name="input">/errorPage.jsp</result> 
+    				</action>
+    				
+    				
+    			
+    			</package>
+    			
+    			
+    
+    </struts>
